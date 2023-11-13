@@ -16,6 +16,9 @@ public:
     void setAge(int newAge) {
         age = newAge;
     }
+      void woofWoof() {
+        cout << name << " \n woof \n woof!" << endl;
+    }
 
 private:
     int age;
@@ -31,6 +34,7 @@ int main() {
     myDog.setAge(myDog.getAge() + 1);
 
     cout << "Updated age: " << myDog.getAge() << " years" << endl;
-
+    cout << "Woof \n, Woof \n";
+    myDog.woofWoof();
     return 0;
 }
